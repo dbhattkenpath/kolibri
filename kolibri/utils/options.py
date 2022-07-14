@@ -426,7 +426,8 @@ base_option_spec = {
     "Urls": {
         "CENTRAL_CONTENT_BASE_URL": {
             "type": "string",
-            "default": "https://studio.learningequality.org",
+            # "default": "https://studio.learningequality.org",
+            "default": "http://18.220.211.77:8080/",
             "deprecated_envvars": ("CENTRAL_CONTENT_DOWNLOAD_BASE_URL",),
             "description": """
                 URL to use as the default source for content import.
@@ -435,7 +436,8 @@ base_option_spec = {
         },
         "DATA_PORTAL_SYNCING_BASE_URL": {
             "type": "string",
-            "default": "https://kolibridataportal.learningequality.org",
+            # "default": "https://kolibridataportal.learningequality.org",
+            "default": "http://18.220.211.77:8000/",
             "description": "URL to use as the target for data portal syncing.",
         },
     },

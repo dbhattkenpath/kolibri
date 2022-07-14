@@ -41,7 +41,7 @@ def add_security_headers(request, response):
     # (e.g. via passing user info out as GET parameters to an attacker's server), or inadvertent data usage
     response[
         "Content-Security-Policy"
-    ] = "default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob:"
+    ] = "default-src https://www.youtube.com https://player.vimeo.com"
 
     return response
 
