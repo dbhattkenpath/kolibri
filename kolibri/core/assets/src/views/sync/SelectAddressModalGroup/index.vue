@@ -5,7 +5,6 @@
       v-if="stage === Stages.SELECT_ADDRESS"
       :filterByChannelId="filterByChannelId"
       :filterByFacilityId="filterByFacilityId"
-      :filterLODAvailable="filterLODAvailable"
       :selectedId="addedAddressId"
       :formDisabled="$attrs.selectAddressDisabled"
       @click_add_address="goToAddAddress"
